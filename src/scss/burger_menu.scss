@@ -1,0 +1,53 @@
+@mixin burger-lines {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #0e2431;
+}
+
+.burger-menu {
+  display: none;
+  width: 32px;
+  height: 36px;
+  flex-direction: column;
+  justify-content: space-around;
+
+  & .checkbox {
+    display: none;
+
+    &:checked ~ .line1 {
+      transform: rotate(45deg);
+    }
+
+    &:checked ~ .line2 {
+      transform: scaleY(0);
+    }
+
+    &:checked ~ .line3 {
+      transform: rotate(-45deg);
+    }
+  }
+
+  & .line1 {
+    @include burger-lines;
+    transform-origin: 0% 100%;
+    transition: transform 0.2s ease;
+  }
+  & .line2 {
+    @include burger-lines;
+  }
+
+  & .line3 {
+    @include burger-lines;
+    transform-origin: 0% 0%;
+    transition: transform 0.2s ease;
+  }
+
+  &__list {
+    &.open {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    font-family: $Playfair;
+    font-size: 0.75em;
+    letter-spacing: 0.14em;
+  }
+}

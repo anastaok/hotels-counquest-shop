@@ -1,0 +1,75 @@
+.footer {
+  padding-top: 79px;
+  padding-bottom: 67px;
+  background-color: #444240;
+  font-family: $Roboto;
+
+  & .base-container {
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  & .logo {
+    &__title {
+      font-size: 0.875em;
+      line-height: 19px;
+      color: #ffffff;
+      font-weight: 700;
+    }
+  }
+
+  &__phone,
+  &__mail {
+    display: block;
+    font-size: 0.75em;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  &__phone {
+    margin-top: 23px;
+  }
+
+  &__mail {
+    margin-top: 15px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 0.875em;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__links {
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 0.75em;
+    color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    & .base-container {
+      grid-template-columns: repeat(2, 180px);
+      row-gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .footer {
+    & .base-container {
+      grid-template-columns: repeat(1, 180px);
+      row-gap: 45px;
+    }
+  }
+}

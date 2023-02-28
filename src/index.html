@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counquest Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="base-container">
+        <a class="logo" href="#">
+          <img src="./img/logo.svg" alt="logo" class="logo__img" />
+          <h1 class="logo__title">CONQUEST</h1>
+        </a>
+
+        <nav class="navbar">
+          <label
+            class="navbar__burger-menu burger-menu"
+            data-id-list="#navbar-list"
+          >
+            <input class="checkbox" type="checkbox" />
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </label>
+
+          <ul id="navbar-list" class="navbar__list">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="widgets">
+          <button class="widgets__search" type="button">
+            <img src="./img/search.svg" alt="search" />
+          </button>
+          <button class="widgets__like" type="button">
+            <img src="./img/like.svg" alt="like" />
+          </button>
+          <button class="widgets__basket" type="button">
+            <img src="./img/basket.svg" alt="basket" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="watch_main">
+        <div class="base-container">
+          <div class="watch_main__info">
+            <h2 class="watch_main__title">Весна/Лето 2019</h2>
+            <p class="watch_main__subtitle">Коллекция</p>
+            <p class="watch_main__text">
+              Швейцарские часы в наличии в Москве и с доставкой по всему миру
+            </p>
+            <a class="watch_main__link" href="#">Смотреть каталог</a>
+          </div>
+          <img
+            class="watch_main__image"
+            src="./img/watch_main.svg"
+            alt="main_watch_clock"
+          />
+          <p class="watch_main__price">22 000 ₽</p>
+          <p class="watch_main__size">28 мм диаметр</p>
+        </div>
+      </section>
+
+      <section class="watch_models">
+        <div class="base-container">
+          <h3 class="watch_models__title">Популярные модели</h3>
+          <a class="watch_models__link" href="#">Смотреть все</a>
+          <div class="watch_models__list list">
+            <div class="list__card card">
+              <h4 class="card__title">RADO</h4>
+              <p class="card__price">65 300 ₽</p>
+              <img class="card__image" src="./img/watch_1.svg" alt="watch_1" />
+              <a class="card__about" href="#">Подробнее</a>
+            </div>
+
+            <div class="list__card card">
+              <h4 class="card__title">BVLGARI</h4>
+              <p class="card__price">81 700 ₽</p>
+              <img class="card__image" src="./img/watch_2.svg" alt="watch_2" />
+              <a class="card__about" href="#">Подробнее</a>
+            </div>
+
+            <div class="list__card card">
+              <h4 class="card__title">BVLGARI</h4>
+              <p class="card__price">72 700 ₽</p>
+              <img class="card__image" src="./img/watch_3.svg" alt="watch_3" />
+              <a class="card__about" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner">
+        <div class="base-container">
+          <div class="banner__image">
+            <img src="./img/photo_banner.svg" alt="banner_clock" />
+            <div class="banner__image-control image-control">
+              <button type="button">
+                <img src="./img/arrow_left.svg" alt="arrow_left" />
+              </button>
+              <span>01</span>
+              <button type="button">
+                <img src="./img/arrow_right.svg" alt="arrow_right" />
+              </button>
+            </div>
+          </div>
+          <div class="banner__info">
+            <h3 class="banner__title">Подлинное качество</h3>
+            <p class="banner__text">
+              Все часы производятся в Швейцарии и имеют сертификаты качества.
+              Настоящие швейцарские часы — это предмет гордости и престижа.
+            </p>
+            <a class="banner__button" href="#">СМОТРЕТЬ КАТАЛОГ</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="base-container">
+          <div class="news__info">
+            <h3 class="news__title">Следите за нашими новостями</h3>
+            <p class="news__text">
+              Подписывайтесь на <b>@conquest_watch</b> в соцсетях и узнавайте о
+              новинках и акциях первыми.
+            </p>
+            <div class="news__social">
+              <a href="#"><img src="./img/instagram.svg" alt="instagram" /></a>
+              <a href="#"><img src="./img/facebook.svg" alt="facebook" /></a>
+              <a href="#"><img src="./img/twitter.svg" alt="twitter" /></a>
+            </div>
+          </div>
+          <div class="news__images images">
+            <img
+              class="images__top-small"
+              src="./img/photo_1.svg"
+              alt="photo_1"
+            />
+            <img
+              class="images__bottom-small"
+              src="./img/photo_2.png"
+              alt="photo_2"
+            />
+            <img
+              class="images__big-right"
+              src="./img/photo_3.png"
+              alt="photo_3"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="base-container">
+        <div>
+          <a class="footer__logo logo" href="#">
+            <img src="./img/logo_2.svg" alt="logo" />
+            <p class="logo__title">CONQUEST</p>
+          </a>
+          <a class="footer__phone" href="#">8 (499) 450-47-97</a>
+          <a class="footer__mail" href="#">info@conquest.watch.ru</a>
+        </div>
+
+        <div class="footer__about">
+          <h4 class="footer__title">о компании</h4>
+          <div class="footer__links">
+            <a href="#">Наши магазины</a>
+            <a href="#">Вакансии</a>
+            <a href="#">Сертификаты</a>
+            <a href="#">Отзывы</a>
+          </div>
+        </div>
+        <div class="footer__customer">
+          <h4 class="footer__title">покупателям</h4>
+          <div class="footer__links">
+            <a href="#">Каталог товаров</a>
+            <a href="#">Как заказать?</a>
+            <a href="#">FAQ</a>
+            <a href="#">Корпоративным клиентам</a>
+          </div>
+        </div>
+        <div class="footer__payment-delivery">
+          <h4 class="footer__title">оплата и доставка</h4>
+          <div class="footer__links">
+            <a href="#">Способы оплаты</a>
+            <a href="#">Время доставки</a>
+            <a href="#">Гарантии и ремонт</a>
+            <a href="#">Возврат и компенсация</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
